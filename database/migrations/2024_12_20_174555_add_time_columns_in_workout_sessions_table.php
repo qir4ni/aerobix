@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('workout_sessions', function (Blueprint $table) {
-            $table->timestamp('start_time')->nullable();
-            $table->timestamp('end_time')->nullable();
+            $table->time('start_time')->nullable();
+            $table->time('end_time')->nullable();
         });
     }
 
